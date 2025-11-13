@@ -10,8 +10,8 @@ from pydantic import BaseModel
 
 app = FastAPI()
 
-VICIDIAL_URL = "https://dialer.insurancepolicy4u.com/agc/vicidial.php?relogin=YES&session_epoch=1580115277&session_id=8600061&session_name=1580115274_610112861720&VD_login=20ddd01&VD_campaign=AIRBUdddLK&phone_login=2001&phone_pass=ss20ddd01&VD_pass=ss2001&LOGINvarONE=&LOGINvarTWO=&LOGINvarTHREE=&LOGINvarFOUR=&LOGINvarFIVE="
-# VICIDIAL_URL = "https://dialer.insurancepolicy4u.com/agc/vicidial.php?relogin=YES&session_epoch=1580115277&session_id=8600061&session_name=1580115274_610112861720&VD_login=2001&VD_campaign=AIRBULK&phone_login=2001&phone_pass=ss2001&VD_pass=ss2001&LOGINvarONE=&LOGINvarTWO=&LOGINvarTHREE=&LOGINvarFOUR=&LOGINvarFIVE="
+# VICIDIAL_URL = "https://dialer.insurancepolicy4u.com/agc/vicidial.php?relogin=YES&session_epoch=1580115277&session_id=8600061&session_name=1580115274_610112861720&VD_login=20ddd01&VD_campaign=AIRBUdddLK&phone_login=2001&phone_pass=ss20ddd01&VD_pass=ss2001&LOGINvarONE=&LOGINvarTWO=&LOGINvarTHREE=&LOGINvarFOUR=&LOGINvarFIVE="
+VICIDIAL_URL = "https://dialer.insurancepolicy4u.com/agc/vicidial.php?relogin=YES&session_epoch=1580115277&session_id=8600061&session_name=1580115274_610112861720&VD_login=2001&VD_campaign=AIRBULK&phone_login=2001&phone_pass=ss2001&VD_pass=ss2001&LOGINvarONE=&LOGINvarTWO=&LOGINvarTHREE=&LOGINvarFOUR=&LOGINvarFIVE="
 def strip_tags(text: str) -> str:
     return re.sub(r"<[^>]+>", "", text).strip()
 
